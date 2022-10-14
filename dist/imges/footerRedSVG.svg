@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="1920.437" height="1033.822" viewBox="0 0 1920.437 1033.822"><defs>
+ <linearGradient id="linear-gradient" x1="0.108" y1="0.36" x2="1" y2="0.428" gradientUnits="objectBoundingBox">
+ <stop offset="0" stop-color="#af204d"/><stop offset="1" stop-color="#f9636b"/></linearGradient></defs><path id="wave" d="M1666.512-816.376V1104.06H707.5S554.638,954.393,685.928,767.011s-60.08-317.785,63.336-571.22-40.78-314.6,36.719-552.36S754.57-816.376,754.57-816.376Z" transform="translate(1104.061 -632.689) rotate(90)" fill="url(#linear-gradient)"/></svg>
