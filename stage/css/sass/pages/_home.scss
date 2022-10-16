@@ -292,6 +292,9 @@ section.my-services {
       color: $primary1;
       font-family: $header-font;
       font-style: italic;
+      @media (max-width: 767px) {
+        font-size: 26px;
+      }
     }
     .row {
       .col-lg-3 {
@@ -481,7 +484,7 @@ section.contact-me {
       font-style: italic;
       @media (max-width: 767px) {
         margin-bottom: 25px;
-        font-size: 24px;
+        font-size: 22px;
       }
     }
     .row {
