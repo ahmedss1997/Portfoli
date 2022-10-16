@@ -982,7 +982,7 @@ section.about-me .container h2 {
 @media (max-width: 767px) {
   section.about-me .container h2 {
     margin-bottom: 25px;
-    font-size: 26px;
+    font-size: 24px;
   }
 }
 section.about-me .container .col-lg-6 .coverr {
@@ -1088,7 +1088,7 @@ section.about-me .container .col-lg-6 .imgee img {
 section.my-skills {
   background: url(../imges/fadeCurve.svg) no-repeat top right;
   background-size: contain;
-  padding: 120px 0 60px 0;
+  padding: 120px 10px 60px;
 }
 section.my-skills .container {
   -webkit-box-shadow: 10px 20px 100px 0px #ccc, -10px -10px 100px 0px #ccc;

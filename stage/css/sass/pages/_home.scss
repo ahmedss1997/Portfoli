@@ -18,7 +18,7 @@ section.about-me {
       color: $primary1-text;
       @media (max-width: 767px) {
         margin-bottom: 25px;
-        font-size: 26px;
+        font-size: 24px;
       }
     }
     .col-lg-6 {
@@ -114,7 +114,7 @@ section.about-me {
 section.my-skills {
   background: url(../imges/fadeCurve.svg) no-repeat top right;
   background-size: contain;
-  padding: $space4 0 $space3 0;
+  padding: $space4 10px $space3;
   .container {
     box-shadow: 10px 20px 100px 0px $gray-color, -10px -10px 100px 0px $gray-color;
     border-radius: $border-radius2;
