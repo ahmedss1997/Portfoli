@@ -2,7 +2,10 @@
 
 section.about-me {
   padding: $space4 0 0 0;
-  background: url(../imges/waveBlueSVG.svg) no-repeat;
+  background: url(../imges/waveBlueSVG.svg) no-repeat;              
+  @media (max-width: 767px) {
+    padding: 60px 0 0 0;
+  }
   .container {
     h2 {
       font-weight: bold;
@@ -13,6 +16,10 @@ section.about-me {
       font-family: $header-font;
       font-style: italic;
       color: $primary1-text;
+      @media (max-width: 767px) {
+        margin-bottom: 25px;
+        font-size: 26px;
+      }
     }
     .col-lg-6 {
       .coverr {
@@ -60,6 +67,7 @@ section.about-me {
         overflow: hidden;
         perspective: 500px;
         margin-top: 0;
+        padding: 10px;
         @media (max-width: 991px) {
           text-align: center;
           perspective: 300px;
@@ -118,6 +126,10 @@ section.my-skills {
       margin-bottom: 80px;
       font-family: $header-font;
       font-style: italic;
+      @media (max-width: 767px) {
+        margin-bottom: 25px;
+        font-size: 26px;
+      }
     }
     .skill {
       text-align: center;
@@ -210,7 +222,7 @@ section.my-services {
             font-family: $header-font;
             font-style: italic;
             @media (max-width: 767px) {
-              font-size: 42px;
+              font-size: 26px;
             }
           }
         }
@@ -343,6 +355,9 @@ section.my-works {
   background-size: contain;
   padding: $space3 0;
   text-align: center;
+  @media (max-width: 767px) {
+    padding-top: 25px;
+  }
   .container {
     h2 {
       font-weight: bold;
@@ -350,6 +365,10 @@ section.my-works {
       margin-bottom: $space3;
       font-family: $header-font;
       font-style: italic;
+      @media (max-width: 767px) {
+        margin-bottom: 45px;
+        font-size: 26px;
+      }
     }
     .box {
       max-width: 360px;
@@ -450,6 +469,9 @@ section.contact-me {
   @media (max-width: 991px) {
     margin-top: $space3;
   }
+  @media (max-width: 767px) {
+    margin-top: 25px;
+  }
   .container {
     h2 {
       font-weight: bold;
@@ -457,6 +479,10 @@ section.contact-me {
       margin-bottom: $space3;
       font-family: $header-font;
       font-style: italic;
+      @media (max-width: 767px) {
+        margin-bottom: 25px;
+        font-size: 24px;
+      }
     }
     .row {
       .text-contact {
@@ -472,7 +498,7 @@ section.contact-me {
           font-family: $header-font;
           font-style: italic;
           @media (max-width: 767px) {
-            font-size: 42px;
+            font-size: 26px;
           }
         }
         p {
@@ -630,6 +656,9 @@ section.contact-me {
     @media (max-width: 991px) {
       padding: $space5 0 $space3;
     }
+    @media (max-width: 767px) {
+      padding: 0px 0px 30px;
+    }
     .row {
       display: flex;
       justify-content: center;
@@ -645,13 +674,16 @@ section.contact-me {
           p {
             font-size: 50px;
             @media (max-width: 767px) {
-              font-size: 40px;
+              font-size: 26px;
             }
           }
           span {
             display: block;
             color: $gray-color;
             margin-bottom: 10px;
+            @media (max-width: 767px) {
+              font-size: 14px;
+            }
           }
         }
       }
@@ -705,8 +737,14 @@ section.contact-me {
                 color: $gray-color;
                 @extend %transition;
                 cursor: pointer;
+                &.fa-facebook-f {
+                  margin-left: 0px;
+                }
                 &:hover {
                   color: $base;
+                }
+                @media (max-width: 767px) {
+                  margin: 0 7px;
                 }
               }
             }

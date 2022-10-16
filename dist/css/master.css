@@ -927,7 +927,7 @@ hr {
   background: linear-gradient(180deg, #f9636b 0%, #af204d 100%);
   border-radius: 50%;
   position: fixed;
-  right: 25px;
+  right: 10px;
   bottom: 20px;
   z-index: 30;
   display: none;
@@ -964,6 +964,11 @@ section.about-me {
   padding: 120px 0 0 0;
   background: url(../imges/waveBlueSVG.svg) no-repeat;
 }
+@media (max-width: 767px) {
+  section.about-me {
+    padding: 60px 0 0 0;
+  }
+}
 section.about-me .container h2 {
   font-weight: bold;
   font-size: 42px;
@@ -973,6 +978,12 @@ section.about-me .container h2 {
   font-family: Libre Baskerville;
   font-style: italic;
   color: #fff;
+}
+@media (max-width: 767px) {
+  section.about-me .container h2 {
+    margin-bottom: 25px;
+    font-size: 26px;
+  }
 }
 section.about-me .container .col-lg-6 .coverr {
   color: #fff;
@@ -1021,6 +1032,7 @@ section.about-me .container .col-lg-6 .imgee {
   -webkit-perspective: 500px;
           perspective: 500px;
   margin-top: 0;
+  padding: 10px;
 }
 @media (max-width: 991px) {
   section.about-me .container .col-lg-6 .imgee {
@@ -1091,6 +1103,12 @@ section.my-skills .container h2 {
   margin-bottom: 80px;
   font-family: Libre Baskerville;
   font-style: italic;
+}
+@media (max-width: 767px) {
+  section.my-skills .container h2 {
+    margin-bottom: 25px;
+    font-size: 26px;
+  }
 }
 section.my-skills .container .skill {
   text-align: center;
@@ -1176,7 +1194,7 @@ section.my-services .container .row .col-lg-6 .sec-title h2 {
 }
 @media (max-width: 767px) {
   section.my-services .container .row .col-lg-6 .sec-title h2 {
-    font-size: 42px;
+    font-size: 26px;
   }
 }
 section.my-services .container .row .col-lg-4 {
@@ -1296,12 +1314,23 @@ section.my-works {
   padding: 60px 0;
   text-align: center;
 }
+@media (max-width: 767px) {
+  section.my-works {
+    padding-top: 25px;
+  }
+}
 section.my-works .container h2 {
   font-weight: bold;
   font-size: 42px;
   margin-bottom: 60px;
   font-family: Libre Baskerville;
   font-style: italic;
+}
+@media (max-width: 767px) {
+  section.my-works .container h2 {
+    margin-bottom: 45px;
+    font-size: 26px;
+  }
 }
 section.my-works .container .box {
   max-width: 360px;
@@ -1404,12 +1433,23 @@ section.contact-me {
     margin-top: 60px;
   }
 }
+@media (max-width: 767px) {
+  section.contact-me {
+    margin-top: 25px;
+  }
+}
 section.contact-me .container h2 {
   font-weight: bold;
   font-size: 42px;
   margin-bottom: 60px;
   font-family: Libre Baskerville;
   font-style: italic;
+}
+@media (max-width: 767px) {
+  section.contact-me .container h2 {
+    margin-bottom: 25px;
+    font-size: 24px;
+  }
 }
 section.contact-me .container .row .text-contact {
   max-width: 520px;
@@ -1429,7 +1469,7 @@ section.contact-me .container .row .text-contact h2 {
 }
 @media (max-width: 767px) {
   section.contact-me .container .row .text-contact h2 {
-    font-size: 42px;
+    font-size: 26px;
   }
 }
 section.contact-me .container .row .text-contact p {
@@ -1584,6 +1624,11 @@ section.contact-me .container .row .formm button:hover {
     padding: 80px 0 60px;
   }
 }
+@media (max-width: 767px) {
+  .footer .foot-top {
+    padding: 0px 0px 30px;
+  }
+}
 .footer .foot-top .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1606,13 +1651,18 @@ section.contact-me .container .row .formm button:hover {
 }
 @media (max-width: 767px) {
   .footer .foot-top .row .col-lg-6 .foot-captin p {
-    font-size: 40px;
+    font-size: 26px;
   }
 }
 .footer .foot-top .row .col-lg-6 .foot-captin span {
   display: block;
   color: #ccc;
   margin-bottom: 10px;
+}
+@media (max-width: 767px) {
+  .footer .foot-top .row .col-lg-6 .foot-captin span {
+    font-size: 14px;
+  }
 }
 .footer .foot-bottom {
   padding-top: 20px;
@@ -1665,8 +1715,16 @@ section.contact-me .container .row .formm button:hover {
   color: #ccc;
   cursor: pointer;
 }
+.footer .foot-bottom .row .col-lg-4 .foot-right .icon a i.fa-facebook-f {
+  margin-left: 0px;
+}
 .footer .foot-bottom .row .col-lg-4 .foot-right .icon a i:hover {
   color: #fff;
+}
+@media (max-width: 767px) {
+  .footer .foot-bottom .row .col-lg-4 .foot-right .icon a i {
+    margin: 0 7px;
+  }
 }
 
 /* Start Header Page */
@@ -1723,6 +1781,11 @@ section.contact-me .container .row .formm button:hover {
     font-size: 34px;
   }
 }
+@media (max-width: 767px) {
+  .header .container .row .boxi .cont-box p, .header .container .row .boxi .cont-box span.tp {
+    font-size: 22px;
+  }
+}
 .header .container .row .boxi .cont-box span.tp {
   -webkit-animation: typing 1s infinite ease;
           animation: typing 1s infinite ease;
@@ -1738,6 +1801,11 @@ section.contact-me .container .row .formm button:hover {
 @media (max-width: 991px) {
   .header .container .row .boxi .cont-box span.tx {
     font-size: 34px;
+  }
+}
+@media (max-width: 767px) {
+  .header .container .row .boxi .cont-box span.tx {
+    font-size: 22px;
   }
 }
 .header .container .row .boxi p {
@@ -1759,6 +1827,7 @@ section.contact-me .container .row .formm button:hover {
   .header .container .row .boxi p.mee {
     letter-spacing: 6px;
     margin-bottom: 0px;
+    font-size: 16px;
   }
 }
 .header .container .row .boxi .btnn {
@@ -1784,6 +1853,7 @@ section.contact-me .container .row .formm button:hover {
   cursor: pointer;
   padding: 15px 10px;
   margin-right: 10px;
+  margin-bottom: 20px;
   background-color: #af204d;
   color: #fff;
   letter-spacing: 1px;
@@ -1795,6 +1865,11 @@ section.contact-me .container .row .formm button:hover {
   background-color: #f9636b;
   color: #fff;
   margin-left: 10px;
+}
+@media (max-width: 767px) {
+  .header .container .row .boxi .btnn a.butn.cv {
+    margin-left: 0px;
+  }
 }
 .header .container .imgee {
   -webkit-transform: translateY(100px);
