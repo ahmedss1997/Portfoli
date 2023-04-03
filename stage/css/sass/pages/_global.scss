@@ -1,0 +1,62 @@
+* {
+  @include prefixer(box-sizing, border-box, webkit moz);
+}
+
+
+ul, ol {
+  list-style: none;
+}
+
+
+html {
+  overflow-x: hidden;
+}
+
+hr {
+  background-color: $primary1;
+  width: 1170px;
+  height: 2px !important;
+  margin: 60px auto !important;
+  margin-bottom: 30px !important;
+}
+
+
+#scroll-top {
+  width: 50px;
+  height: 50px;
+  background: $main-bgcolor;
+  border-radius: 50%;
+  position: fixed;
+  right: 10px;
+  bottom: 20px;
+  z-index: 30;
+  display: none;
+  cursor: pointer;
+  @extend %transition;
+  &:hover {
+    background-color: $primary1;
+  }
+  i {
+    height: 100%;
+    line-height: 50px;
+    padding-left: 20px;
+    font-size: 20px;
+    color: $base;
+  }
+}
+
+
+.hidden {
+  display: none;
+}
+
+.fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+.marg {
+  margin-top: -70px;
+}

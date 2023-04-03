@@ -1,0 +1,13 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1921 265" width="1921" height="265">
+	<title>headerRedSVG-svg</title>
+	<defs>
+		<linearGradient id="g1" x1="207" y1="-413.7" x2="1920" y2="-343.4" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#243b64"/>
+			<stop offset="1" stop-color="#243b64"/>
+		</linearGradient>
+	</defs>
+	<style>
+		.s0 { fill: url(#g1) } 
+	</style>
+	<path id="wave" class="s0" d="m-0.4-785.8h1920.4v959c0 0-149.7 152.9-337.1 21.6-187.3-131.3-317.7 60-571.2-63.4-253.4-123.4-314.6 40.8-552.3-36.7-237.8-77.5-459.8 31.4-459.8 31.4z"/>
+</svg>

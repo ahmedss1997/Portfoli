@@ -1,0 +1,504 @@
+doctype html
+html(lang="en", dir="ltr")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE-edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="css/bootstrap5.css")
+    link(rel="stylesheet", href="css/all.min.css")
+    link(rel="stylesheet", href="css/animate.css")
+    link(rel="stylesheet", href="css/master.css")
+    link(href="https://fonts.googleapis.com/css2?family=Cairo:wght@900&family=Reem+Kufi&display=swap" rel="stylesheet")
+    script(src="JS/html5shiv.min.js")
+    script(src="JS/respond.min.js")
+    title My Portiflo
+  body
+    
+    // Start Navbar
+    
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light#header_id
+      .container
+        a.navbar-brand(href='#') Ahmed Elbohy
+        button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarSupportedContent.collapse.navbar-collapse
+          ul.navbar-nav.ms-auto.mb-2.mb-lg-0
+            li.nav-item
+              a.nav-link.active(aria-current='page' href='#header_id') Home
+            li.nav-item
+              a.nav-link(href='#about') About 
+            li.nav-item
+              a.nav-link(href='#skills') Skills
+            li.nav-item
+              a.nav-link(href='#services') Services
+            li.nav-item
+              a.nav-link(href='#works') Portfolio
+            li.nav-item
+              a.nav-link(href='#contact') Contact
+
+    // End Navbar
+
+    include layout/header
+
+    // Start About Section
+
+    section.about-me#about
+      .container
+        h2.head-border.text-center My Bloger
+        .row 
+          .col-lg-6
+            .coverr
+              h3.wow.fadeInLeft(data-wow-duration="1.5s" data-wow-delay="0.4s" data-wow-offset="300") Personal Details
+              p.wow.fadeInLeft(data-wow-duration="1.5s" data-wow-delay="0.6s" data-wow-offset="300") Meticulous web developer with over 3 years of experience and passion for Building websites/web applications too,  An ambitious type of person with a big vision diligent and motivated to learn everything is new, looking forward to developing myself and the place I am in, keen to achieve all my ambitions and goals, I have the patience and perseverance that enables me to see my future in front of me now 
+              .social.wow.fadeInLeft(data-wow-duration="1.5s" data-wow-delay="0.8s" data-wow-offset="100")
+                a(class="hvr-float-shadow fir" target='_blank', href="https://web.facebook.com/profile.php?id=100015658807836") #[i.fab.fa-facebook-f]
+                a(class="hvr-float-shadow" target='_blank', href="//api.whatsapp.com/send?phone=+201090985842&text=Welcome to my chat") #[i.fab.fa-whatsapp]
+                //- i.fab.fa-twitter
+                //- a.hvr-float-shadow #[i.fab.fa-google-plus-g]
+                a(class="hvr-float-shadow" target='_blank', href="https://www.linkedin.com/in/ahmed-elbohy-795a271b2/") #[i.fab.fa-linkedin-in]
+                //- i.fab.fa-instagram
+                a(class="hvr-float-shadow" target='_blank', href="https://github.com/ahmedss1997") #[i.fab.fa-github-alt]
+          .col-lg-6
+            .imgee
+              img(src="imges/manChair.svg", alt="")
+
+    //- hr
+
+    // End About Section
+
+    // Start My Skills Section
+
+    section.my-skills#skills
+      .container
+        h2.head-border.text-center My Skills
+        .row
+          .col-lg-2.col-md-3.col-sm-4.col-6.skill
+            .imges.wow.bounceIn(data-wow-duration="0.5s" data-wow-delay="0.5s" data-wow-offset="200")
+              .overllay
+              img(src="imges/skills/html5.png", alt="")
+            p Html5
+          .col-lg-2.col-md-3.col-sm-4.col-6.skill
+            .imges.wow.bounceIn(data-wow-duration="0.5s" data-wow-delay=".8s" data-wow-offset="200")
+              .overllay
+              img(src="imges/skills/css.png", alt="")
+            p Css3
+          .col-lg-2.col-md-3.col-sm-4.col-6.skill
+            .imges.wow.bounceIn(data-wow-duration="0.5s" data-wow-delay="1.2s" data-wow-offset="200")
+              .overllay
+              img.js(src="imges/skills/middle-modified.png", alt="")
+            p JavaScript
+          .col-lg-2.col-md-3.col-sm-4.col-6.skill
+            .imges.wow.bounceIn(data-wow-duration="0.5s" data-wow-delay="1.5s" data-wow-offset="200")
+              .overllay
+              img(src="imges/skills/tp.png", alt="")
+            p TypeScript
+          .col-lg-2.col-md-3.col-sm-4.col-6.skill
+            .imges.wow.bounceIn(data-wow-duration="0.5s" data-wow-delay="1.8s" data-wow-offset="200")
+              .overllay
+              img(src="imges/skills/jquery-pn.png", alt="")
+            p jQuery
+          .col-lg-2.col-md-3.col-sm-4.col-6.skill
+            .imges.wow.bounceIn(data-wow-duration="0.5s" data-wow-delay="2.1s" data-wow-offset="200")
+              .overllay
+              img(src="imges/skills/bootstrap-pn.png", alt="")
+            p Bootstrap
+          .col-lg-2.col-md-3.col-sm-4.col-6.skill
+            .imges.wow.bounceIn(data-wow-duration="0.5s" data-wow-delay="2.4s" data-wow-offset="200")
+              .overllay
+              //- img(src="imges/skills/tawilind-modified.png", alt="")
+              img(src="imges/skills/images-t.png", alt="")
+            p Tailwind Css
+          .col-lg-2.col-md-3.col-sm-4.col-6.skill
+            .imges.wow.bounceIn(data-wow-duration="0.5s" data-wow-delay="2.7s" data-wow-offset="200")
+              .overllay
+              img(src="imges/skills/sass-pn.png", alt="")
+            p Sass
+          .col-lg-2.col-md-3.col-sm-4.col-6.skill
+            .imges.wow.bounceIn(data-wow-duration="0.5s" data-wow-delay="3s" data-wow-offset="200")
+              .overllay
+              img(src="imges/skills/pug-pn.png", alt="")
+            p Pug 
+          .col-lg-2.col-md-3.col-sm-4.col-6.skill
+            .imges.wow.bounceIn(data-wow-duration="0.5s" data-wow-delay="3.3s" data-wow-offset="200")
+              .overllay
+              img(src="imges/skills/gulp-pn.png", alt="")
+            p Gulp
+          .col-lg-2.col-md-3.col-sm-4.col-6.skill
+            .imges.wow.bounceIn(data-wow-duration="0.5s" data-wow-delay="3.6s" data-wow-offset="200")
+              .overllay
+              img.vue(src="imges/skills/vue-v.png", alt="")
+            p Vue JS
+          .col-lg-2.col-md-3.col-sm-4.col-6.skill
+            .imges.wow.bounceIn(data-wow-duration="0.5s" data-wow-delay="3.9s" data-wow-offset="200")
+              .overllay
+              img(src="imges/skills/vux.png", alt="")
+            p Vuex 
+          .col-lg-2.col-md-3.col-sm-4.col-6.skill
+            .imges.wow.bounceIn(data-wow-duration="0.5s" data-wow-delay="4.2s" data-wow-offset="100")
+              .overllay
+              img(src="imges/skills/index0.png", alt="")
+            p vutify      
+          .col-lg-2.col-md-3.col-sm-4.col-6.skill
+            .imges.wow.bounceIn(data-wow-duration="0.5s" data-wow-delay="4.5s" data-wow-offset="100")
+              .overllay
+              img(src="imges/skills/index1.png", alt="")
+            p Axios & apis         
+          .col-lg-2.col-md-3.col-sm-4.col-6.skill
+            .imges.wow.bounceIn(data-wow-duration="0.5s" data-wow-delay="4.8s" data-wow-offset="100")
+              .overllay
+              img.github(src="imges/skills/GitHub-Mark.png", alt="")
+            p Github
+
+    //- hr
+
+    // End My Skills Section
+
+    // Start My Services Section
+
+    section.my-services#services
+      .container
+        .row
+          .col-lg-6
+            .sec-title
+              h2 What Services you will Get from me!
+        .row 
+          .col-lg-4.col-md-6
+            .box-serv.hvr-bounce-to-top(class="wow bounceInUp" data-wow-duration="2s" data-wow-delay=".5s" data-wow-offset="250")
+              .img-serv
+                span #[i.fas.fa-bezier-curve]
+              .captin-serv 
+                //- h3 UI / UX Designer 
+                h3 Website Design 
+                p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus adipisci necessitatibus sunt quidem sit recusandae voluptatem. Explicabo, doloremque id? Pariatur.
+          .col-lg-4.col-md-6
+            .box-serv.hvr-bounce-to-top(class="wow bounceInUp" data-wow-duration="2s" data-wow-delay=".3s" data-wow-offset="250")
+              .img-serv
+                span #[i.fas.fa-code]
+              .captin-serv 
+                h3 Web Development
+                p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus adipisci necessitatibus sunt quidem sit recusandae voluptatem. Explicabo, doloremque id? Pariatur.
+          .col-lg-4.col-md-6
+            .box-serv.hvr-bounce-to-top(class="wow bounceInUp" data-wow-duration="2s" data-wow-delay=".1s" data-wow-offset="250")
+              .img-serv
+                span #[i.fas.fa-laptop-code]
+              .captin-serv 
+                h3 Web Application 
+                p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus adipisci necessitatibus sunt quidem sit recusandae voluptatem. Explicabo, doloremque id? Pariatur.
+      .state 
+        .container 
+          h2 Our Awesome Stats
+          .row 
+            .col-lg-3.col-md-6
+              .box-state 
+                i.far.fa-user 
+                span.number(data-goal="50") 0
+                p Clients
+            .col-lg-3.col-md-6
+              .box-state 
+                i.fas.fa-code 
+                span.number(data-goal="25") 0
+                p Projects
+            .col-lg-3.col-md-6
+              .box-state 
+                i.fas.fa-globe-asia 
+                span.number(data-goal="50") 0
+                p Countries
+            .col-lg-3.col-md-6
+              .box-state 
+                i.far.fa-money-bill-alt 
+                span.number(data-goal="500") 0
+                p Money
+
+
+    // End My Services Section
+
+    // Start My Work Section
+    
+    
+    section.my-works#works
+      .container
+        h2.head-border.text-center My Works
+        .row
+          .col-lg-4.col-md-6.wow.bounceInRight(data-wow-duration="2.5s" data-wow-delay="0.2s" data-wow-offset="300")
+            .box
+              a
+                .head
+                  img(src="imges/work/HR.png", alt="")
+              .text
+                h3 Hr System
+                p This Site Is Created By Vue js 
+                .btn
+                  a(href="https://ahmedss1997.github.io/hr_system/dist", target="_blank", class="hvr-wobble-to-bottom-right")  View Live
+                  a(href="https://github.com/ahmedss1997/hr_system", target="_blank", class="hvr-wobble-to-top-right")  View Github
+          .col-lg-4.col-md-6.wow.bounceInRight(data-wow-duration="2.5s" data-wow-delay="0.4s" data-wow-offset="300")
+            .box
+              a
+                .head
+                  img(src="imges/work/ElryadTask.png", alt="")
+              .text
+                h3 Elryad
+                p This Site Is Created By Vue js 
+                .btn
+                  a(href="https://ahmedss1997.github.io/ElryaadTask/dist/", target="_blank", class="hvr-wobble-to-bottom-right")  View Live
+                  a(href="https://github.com/ahmedss1997/ElryaadTask", target="_blank", class="hvr-wobble-to-top-right")  View Github
+          .col-lg-4.col-md-6.wow.bounceInLeft(data-wow-duration="2.5s" data-wow-delay="0.6s" data-wow-offset="300")
+            .box
+              a
+                .head
+                  img#scrol(src="imges/work/Bayanateck.png", alt="")
+              .text
+                h3 Bayanatech
+                p This Site Is Created By Vue js 
+                .btn
+                  a(href="https://ahmedss1997.github.io/Bayanatech/dist/", target="_blank", class="hvr-wobble-to-bottom-right")  View Live
+                  a(href="https://github.com/ahmedss1997/Bayanatech", target="_blank", class="hvr-wobble-to-top-right")  View Github
+          .col-lg-4.col-md-6.wow.bounceInRight(data-wow-duration="2.5s" data-wow-delay="0.2s" data-wow-offset="300")
+            .box
+              a
+                .head
+                  img(src="imges/work/chat.png", alt="")
+              .text
+                h3 Chat
+                p This Site Is Created By Vue js 
+                .btn
+                  a(href="https://ahmedss1997.github.io/Chat/dist/", target="_blank", class="hvr-wobble-to-bottom-right")  View Live
+                  a(href="https://github.com/ahmedss1997/Chat", target="_blank", class="hvr-wobble-to-top-right")  View Github
+          .col-lg-4.col-md-6.wow.bounceInRight(data-wow-duration="2.5s" data-wow-delay="0.4s" data-wow-offset="300")
+            .box
+              a
+                .head
+                  img(src="imges/work/smooth.png", alt="")
+              .text
+                h3 Smoothie
+                p This Site Is Created By Vue js 
+                .btn
+                  a(href="https://ahmedss1997.github.io/Smoothie/dist/", target="_blank", class="hvr-wobble-to-bottom-right")  View Live
+                  a(href="https://github.com/ahmedss1997/Smoothie", target="_blank", class="hvr-wobble-to-top-right")  View Github
+          .col-lg-4.col-md-6.wow.bounceInRight(data-wow-duration="2.5s" data-wow-delay="0.2s" data-wow-offset="300")
+            .box
+              a
+                .head
+                  img(src="imges/work/saloons.png", alt="")
+              .text
+                h3 Saloons 
+                p This Site Is Created By Vue js 
+                .btn
+                  a(href="https://ahmedss1997.github.io/saloons/dist/#/", target="_blank", class="hvr-wobble-to-bottom-right")  View Live
+                  a(href="https://github.com/ahmedss1997/saloons", target="_blank", class="hvr-wobble-to-top-right")  View Github
+          .col-lg-4.col-md-6.wow.bounceInLeft(data-wow-duration="2.5s" data-wow-delay="0.6s" data-wow-offset="300")
+            .box
+              a
+                .head
+                  img#scrol(src="imges/work/three.png", alt="")
+              .text
+                h3 Babies
+                .btn
+                  a(href="https://ahmedss1997.github.io/Babys/", target="_blank", class="hvr-wobble-to-bottom-right")  View Live
+                  a(href="https://github.com/ahmedss1997/Babys", target="_blank", class="hvr-wobble-to-top-right")  View Github
+          .col-lg-4.col-md-6.wow.bounceInLeft(data-wow-duration="2.5s" data-wow-delay="0.4s" data-wow-offset="300")
+            .box
+              a
+                .head
+                  img(src="imges/work/tow.png", alt="")
+              .text
+                h3 Washingation
+                .btn
+                  a(href="https://ahmedss1997.github.io/Washington/dist/", target="_blank", class="hvr-wobble-to-bottom-right")  View Live
+                  a(href="https://github.com/ahmedss1997/Washington", target="_blank", class="hvr-wobble-to-top-right")  View Github
+          .col-lg-4.col-md-6.wow.bounceInLeft(data-wow-duration="2.5s" data-wow-delay="0.2s" data-wow-offset="300")
+            .box
+              a
+                .head
+                  img(src="imges/work/one.png", alt="")
+              .text
+                h3 Wellness
+                .btn
+                  a(href="https://ahmedss1997.github.io/Wellness/dist/", target="_blank", class="hvr-wobble-to-bottom-right")  View Live
+                  a(href="https://github.com/ahmedss1997/Wellness", target="_blank", class="hvr-wobble-to-top-right")  View Github
+          .col-lg-4.col-md-6.wow.bounceInRight(data-wow-duration="2.5s" data-wow-delay="0.4s" data-wow-offset="300")
+            .box
+              a
+                .head
+                  img(src="imges/work/five.png", alt="")
+              .text
+                h3 Cascade
+                .btn
+                  a(href="https://ahmedss1997.github.io/Cascade/", target="_blank", class="hvr-wobble-to-bottom-right")  View Live
+                  a(href="https://github.com/ahmedss1997/Cascade", target="_blank", class="hvr-wobble-to-top-right")  View Github
+          .col-lg-4.col-md-6.wow.bounceInRight(data-wow-duration="2.5s" data-wow-delay="0.6s" data-wow-offset="300")
+            .box
+              a
+                .head
+                  img(src="imges/work/four.png", alt="")
+              .text
+                h3 Education
+                .btn
+                  a(href="https://ahmedss1997.github.io/Education/dist/", target="_blank", class="hvr-wobble-to-bottom-right")  View Live
+                  a(href="https://github.com/ahmedss1997/Education", target="_blank", class="hvr-wobble-to-top-right")  View Github
+          .col-lg-4.col-md-6.wow.bounceInLeft(data-wow-duration="2.5s" data-wow-delay="0.6s" data-wow-offset="300")
+            .box
+              a
+                .head
+                  img(src="imges/work/nine.png", alt="")
+              .text
+                h3 Axit
+                .btn
+                  a(href="https://ahmedss1997.github.io/Axit/", target="_blank", class="hvr-wobble-to-bottom-right")  View Live
+                  a(href="https://github.com/ahmedss1997/Axit", target="_blank", class="hvr-wobble-to-top-right")  View Github
+          .col-lg-4.col-md-6.wow.bounceInLeft(data-wow-duration="2.5s" data-wow-delay="0.4s" data-wow-offset="300")
+            .box
+              a
+                .head
+                  img(src="imges/work/eight.png", alt="")
+              .text
+                h3 Herb Gold
+                .btn
+                  a(href="https://ahmedss1997.github.io/MakeUp/dist/", target="_blank", class="hvr-wobble-to-bottom-right")  View Live
+                  a(href="https://github.com/ahmedss1997/MakeUp", target="_blank", class="hvr-wobble-to-top-right")  View Github
+          .col-lg-4.col-md-6.wow.bounceInLeft(data-wow-duration="2.5s" data-wow-delay="0.2s" data-wow-offset="300")
+            .box
+              a
+                .head
+                  img(src="imges/work/seven.png", alt="")
+              .text
+                h3 Pubg
+                .btn
+                  a(href="https://ahmedss1997.github.io/Pubg/dist/", target="_blank", class="hvr-wobble-to-bottom-right")  View Live
+                  a(href="https://github.com/ahmedss1997/Pubg", target="_blank", class="hvr-wobble-to-top-right")  View Github
+          //- .col-lg-4.col-md-6.wow.bounceInRight(data-wow-duration="2.5s" data-wow-delay="0.2s" data-wow-offset="300")
+            .box.hidden 
+              a
+                .head
+                  img(src="imges/dash.png", alt="")
+              .text
+                //- h3 Dashboard #[Br (Not Completed)]
+                a.hvr-wobble-to-bottom-right View Live
+                a.hvr-wobble-to-top-right View Github
+          //- .col-lg-4.col-md-6.wow.bounceInRight(data-wow-duration="2.5s" data-wow-delay="0.4s" data-wow-offset="300")
+            .box.hidden 
+              a
+                .head
+                  img(src="imges/saloons.png", alt="")
+              .text
+                //- h3 Saloons Website
+                a.hvr-wobble-to-bottom-right View Live
+                a.hvr-wobble-to-top-right View Github
+          //- .col-lg-4.col-md-6.wow.bounceInRight(data-wow-duration="2.5s" data-wow-delay="0.6s" data-wow-offset="300")
+            .box.hidden 
+              a
+                .head
+                  img(src="imges/cascade.png", alt="")
+              .text
+                //- h3 Cascade
+                a.hvr-wobble-to-bottom-right View Live
+                a.hvr-wobble-to-top-right View Github
+          //- .col-lg-4.col-md-6.wow.bounceInLeft(data-wow-duration="2.5s" data-wow-delay="0.6s" data-wow-offset="300")
+            .box.hidden 
+              a
+                .head
+                  img(src="imges/web.png", alt="")
+              .text
+                //- h3 Babes
+                a.hvr-wobble-to-bottom-right View Live
+                a.hvr-wobble-to-top-right View Github
+          //- .col-lg-4.col-md-6.wow.bounceInLeft(data-wow-duration="2.5s" data-wow-delay="0.4s" data-wow-offset="300")
+            .box.hidden 
+              a
+                .head
+                  img(src="imges/Herb.png", alt="")
+              .text
+                //- h3 Beautey
+                a.hvr-wobble-to-bottom-right View Live
+                a.hvr-wobble-to-top-right View Github
+          //- .col-lg-4.col-md-6.wow.bounceInLeft(data-wow-duration="2.5s" data-wow-delay="0.2s" data-wow-offset="300")
+            .box.hidden 
+              a
+                .head
+                  img(src="imges/task.png", alt="")
+              .text
+                //- h3 Education Website
+                a.hvr-wobble-to-bottom-right View Live
+                a.hvr-wobble-to-top-right View Github
+        button.show-more Show More
+
+    //- hr
+
+    // End My Work Section
+
+
+    // Start Contact Me Section
+
+    section.contact-me#contact
+      .container
+        //h1#heading Hidden
+        h2.head-border.text-center Contact Me
+        .row
+          .col-lg-6.wow.bounceInLeft(data-wow-duration="1s" data-wow-offset="300")
+            .text-contact 
+              h2 If Not Now, When? Let’s Work Together!
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit accusamus voluptatibus accusantium dolorem quidem consequatur repellat similique fugit facilis, est numquam delectus qui repellendus distinctio officiis necessitatibus asperiores excepturi, soluta minus mollitia itaque molestiae cumque id? Sed dignissimos facere officiis!
+              img(src="imges/name.webp", alt="")
+          .col-lg-6.wow.bounceInRight(data-wow-duration="1s" data-wow-offset="300")
+            .formm
+              .formm-main
+                label Full Name
+                .groop
+                  span #[i.fas.fa-user]
+                  input#main-input(type="text" nam="username" placeholder="Name")
+                  i.fa.fa-check.valid-icon-1.check1
+                  i.fas.fa-times.valid-icon-2.check2
+                .validation-msg.empty Field can't be empty
+              .formm-main
+                label Email Address
+                .groop
+                  span #[i.far.fa-envelope]
+                  input#main-input(type="email" nam="email" placeholder="Email")
+                  i.fa.fa-check.valid-icon-1.check1
+                  i.fas.fa-times.valid-icon-2.check2
+                .validation-msg.empty Field can't be empty
+              .formm-main
+                label Phone Number
+                .groop
+                  span #[i.fas.fa-phone-volume]
+                  input#main-input(type="text" nam="subject" placeholder="Subject")
+                  i.fa.fa-check.valid-icon-1.check1
+                  i.fas.fa-times.valid-icon-2.check2
+                .validation-msg.empty Field can't be empty
+              textarea(name="Message", placeholder="Message")
+              button.hvr-float-shadow Send Message
+
+    // End Contact Me Section
+
+    // Start Footer Section
+
+    .footer
+      .container
+        .foot-top
+          .row
+            .col-lg-6
+              .foot-captin
+                h6 Portfolio
+                p asami6596@gmail.com
+                span Cairo - Damietta Governorate, Post office Box 34524
+                span Phone-01090985842
+        .foot-bottom
+          .row 
+            .col-lg-8
+              .foot-left
+                p Copyright &copy; 2020 All rights reserved | This Template Is Made With #[i.fa.fa-heart] By #[span #[a(href="https://www.linkedin.com/in/ahmed-elbohy-795a271b2/", target="_blank") Ahmed_Elbohy]]
+            .col-lg-4
+              .foot-right 
+                .icon 
+                  span Contact Me Via
+                  a(href="https://web.facebook.com/profile.php?id=100015658807836", target="_blank",) #[i.fab.fa-facebook-f]
+                  a(href="//api.whatsapp.com/send?phone=+201090985842&text=Welcome to my chat", target="_blank",) #[i.fab.fa-whatsapp]
+                  a(href="https://www.linkedin.com/in/ahmed-elbohy-795a271b2/", target="_blank",) #[i.fab.fa-linkedin-in]
+                  a(href="https://github.com/ahmedss1997", target="_blank",) #[i.fab.fa-github-alt]
+
+
+    // End Footer Section
+
+    #scroll-top.hvr-buzz-out
+      i.fas.fa-level-up-alt
+
+    include layout/footerscripts

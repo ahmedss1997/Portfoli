@@ -1,0 +1,15 @@
+
+.head-border {
+  &::after, &::before {
+    content: "";
+    width: 60px;
+    height: 2px;
+    margin: 10px 25px;
+    display: inline-block;
+    background-color: $primary1;
+  }
+}
+
+%transition {
+  @include prefixer (transition, all .5s ease-in-out, webkit moz o);
+}
