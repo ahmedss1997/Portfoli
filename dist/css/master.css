@@ -1372,6 +1372,13 @@ section.my-works .container .box .text h3 {
   font-size: 30px;
   color: #f9636b;
 }
+section.my-works .container .box .text h5 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 26px;
+  padding: 0 10px;
+  color: #f9636b;
+}
 section.my-works .container .box .text p {
   color: #ffef85;
 }

@@ -2,7 +2,7 @@
 
 section.about-me {
   padding: $space4 0 0 0;
-  background: url(../imges/waveBlueSVG.svg) no-repeat;              
+  background: url(../imges/waveBlueSVG.svg) no-repeat;
   @media (max-width: 767px) {
     padding: 60px 0 0 0;
   }
@@ -84,7 +84,7 @@ section.about-me {
           cursor: pointer;
           animation: up-and-down 5s linear infinite;
           @extend %transition;
-          transform:translate3d(0,0,-50px);
+          transform: translate3d(0, 0, -50px);
           @media (max-width: 991px) {
             width: 80%;
             height: 80%;
@@ -95,10 +95,9 @@ section.about-me {
   }
 }
 
-
-
 @keyframes up-and-down {
-  0%, 100% {
+  0%,
+  100% {
     top: 0px;
   }
   50% {
@@ -108,7 +107,6 @@ section.about-me {
 
 /* End About Section */
 
-
 /* Start My Skills Section */
 
 section.my-skills {
@@ -116,7 +114,8 @@ section.my-skills {
   background-size: contain;
   padding: $space4 10px $space3;
   .container {
-    box-shadow: 10px 20px 100px 0px $gray-color, -10px -10px 100px 0px $gray-color;
+    box-shadow: 10px 20px 100px 0px $gray-color,
+      -10px -10px 100px 0px $gray-color;
     border-radius: $border-radius2;
     padding: $space3 0;
     background-color: $base;
@@ -175,7 +174,7 @@ section.my-skills {
           }
           &.ajax {
             border-radius: $border-radius1;
-          }          
+          }
           &.vue {
             width: 80px;
             height: 80px;
@@ -198,9 +197,7 @@ section.my-skills {
 
 /* End My Skills Section */
 
-
 /* Start My Services Section */
-
 
 section.my-services {
   background: url(../imges/bgBlue.svg) no-repeat left top;
@@ -267,7 +264,7 @@ section.my-services {
               }
             }
           }
-          .captin-serv  {
+          .captin-serv {
             padding: $space2 0;
             h3 {
               margin-bottom: $space2;
@@ -304,12 +301,13 @@ section.my-services {
           text-align: center;
           background: $base;
           overflow: hidden;
-          border-radius:$border-radius1;
+          border-radius: $border-radius1;
           margin-top: $space2;
-          box-shadow: 1px 1px 40px 0px rgba(0,0,0,.5);
+          box-shadow: 1px 1px 40px 0px rgba(0, 0, 0, 0.5);
           transition: all 1.5s ease-in-out;
           // @extend %transition;
-          &::before, &::after {
+          &::before,
+          &::after {
             content: "";
             position: absolute;
             width: 5px;
@@ -325,7 +323,8 @@ section.my-services {
             bottom: 0;
             left: 0;
           }
-          &:hover::before, &:hover::after {
+          &:hover::before,
+          &:hover::after {
             height: 100%;
           }
           i {
@@ -349,7 +348,6 @@ section.my-services {
 }
 
 /* Start My Services Section */
-
 
 /* Start My Work Section */
 
@@ -376,13 +374,14 @@ section.my-works {
     .box {
       max-width: 360px;
       margin: auto;
-      box-shadow: 10px 20px 100px 0px $gray-color, -10px -10px 100px 0px $gray-color;
+      box-shadow: 10px 20px 100px 0px $gray-color,
+        -10px -10px 100px 0px $gray-color;
       border-radius: $border-radius2;
       margin-bottom: $space3;
       border: 1px solid $gray-color;
       overflow: hidden;
       box-shadow: 0 3px 10px rgb(0 0 0 / 8%);
-      @extend %transition; 
+      @extend %transition;
       .head {
         height: 430px;
         overflow: hidden;
@@ -399,10 +398,17 @@ section.my-works {
         cursor: pointer;
         padding: 25px 0;
         @extend %transition;
-        h3  {
+        h3 {
           text-align: center;
           font-weight: bold;
           font-size: 30px;
+          color: $primary1;
+        }
+        h5 {
+          text-align: center;
+          font-weight: bold;
+          font-size: 26px;
+          padding: 0 10px;
           color: $primary1;
         }
         p {
@@ -413,9 +419,9 @@ section.my-works {
           justify-content: center;
           align-items: center;
           a {
-            margin:0 $space1;
+            margin: 0 $space1;
             text-decoration: none;
-            background:#{$main-bgcolor};
+            background: #{$main-bgcolor};
             color: $base;
             border: 1px solid $primary1;
             width: 160px;
@@ -430,7 +436,8 @@ section.my-works {
         }
       }
       &:hover {
-        box-shadow: 10px 20px 20px 0px $gray-color, -10px -10px 20px 0px $gray-color;
+        box-shadow: 10px 20px 20px 0px $gray-color,
+          -10px -10px 20px 0px $gray-color;
         .text {
           a {
             background: transparent;
@@ -442,7 +449,7 @@ section.my-works {
     }
   }
   .show-more {
-    background:#{$main-bgcolor};
+    background: #{$main-bgcolor};
     color: $base;
     border: 1px solid $primary1;
     width: 180px;
@@ -461,12 +468,9 @@ section.my-works {
   }
 }
 
-
 /* End My Work Section */
 
-
 /* Start Contact Me Section */
-
 
 section.contact-me {
   padding-top: $space3;
@@ -494,7 +498,7 @@ section.contact-me {
     .row {
       .text-contact {
         max-width: 520px;
-        padding: $space1 ;
+        padding: $space1;
         @media (max-width: 991px) {
           margin-bottom: 40px;
         }
@@ -517,7 +521,7 @@ section.contact-me {
       }
       .formm {
         @media (max-width: 767px) {
-          padding: $space1 ;
+          padding: $space1;
         }
         .formm-main {
           label {
@@ -544,7 +548,7 @@ section.contact-me {
               padding: 6px 12px;
               outline: none;
               border-radius: $border-radius2;
-              border:1px solid $primary2-text;
+              border: 1px solid $primary2-text;
               background-color: $primary2-text;
               &:focus {
                 outline: $primary1;
@@ -619,7 +623,7 @@ section.contact-me {
           padding: 10px $space1;
           outline: none;
           border-radius: $border-radius2;
-          border:1px solid $primary2-text;
+          border: 1px solid $primary2-text;
           background-color: $primary2-text;
           margin-bottom: 40px;
           &:focus {
@@ -628,10 +632,10 @@ section.contact-me {
         }
         button {
           width: 75%;
-          padding: $space1 $space2;      
+          padding: $space1 $space2;
           background: $main-bgcolor;
           border: 1px solid $primary1;
-          border-radius:$border-radius2;
+          border-radius: $border-radius2;
           margin: $space2 auto $space2;
           display: block;
           font-weight: bold;
@@ -648,7 +652,6 @@ section.contact-me {
     }
   }
 }
-
 
 /* End Contact Me Section */
 
@@ -761,6 +764,3 @@ section.contact-me {
     }
   }
 }
-
-
-
